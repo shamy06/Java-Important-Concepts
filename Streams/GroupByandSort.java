@@ -26,7 +26,7 @@ public class GroupByandSort {
 							LinkedHashMap::new
 							));
 		
-		System.out.println(finalMap+"c"+fruitsMap);
+		System.out.println(finalMap);
 	}
 }
 
