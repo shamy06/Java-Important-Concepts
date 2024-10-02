@@ -11,9 +11,8 @@ public class FrequncyOfEachCahracter {
 		String inputString = "Java Concept Of The Day";
 		
 		Map<Character, Long> charCountMap = inputString.chars()
-														.mapToObj(c-> (char) c)
-														.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new,
-																Collectors.counting()));
+			.mapToObj(c-> (char)c).
+			collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new,Collectors.counting()));
 
         System.out.println(charCountMap);
 														
