@@ -10,6 +10,11 @@ Stream.iterate(new int[] {1,3} f-> new int[] {f[1],f[1]+2})
 }
 }
 
+//second approach
+Stream<Integer> odd = Stream.iterate(1,i->i+2).limit(10);
+        
+        odd.forEach(System.out::println);
+
 // Stream Creation: It starts with an array new int[] {1, 3}, where 1 is the first element and 3 is the second.
 
 // Iteration: The iterate method creates an infinite stream. The second argument, f -> new int[] {f[1], f[1] + 2}, defines how to generate the next element. It takes the current element f (which is an array) and produces a new array where:
