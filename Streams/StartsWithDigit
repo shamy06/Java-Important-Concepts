@@ -1,0 +1,13 @@
+
+import java.util.*;
+import java.util.stream.*;
+
+public class StartsWithDigit;
+{
+	public static void main(String[] args) {
+	    
+	    int[] numbers = {10,15,9,49,19,98,32};
+	    
+	    Arrays.stream(numbers).filter(str->String.valueOf(str).startsWith("1")).forEach(System.out :: println);
+	}
+}
